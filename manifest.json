@@ -1,0 +1,30 @@
+{
+  "name": "CSS Xray",
+  "version": "1.0",
+  "description": "An extension debugging css padding and margin issues.",
+  "commands": {
+    "toggle-debug-vision": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "mac": "Command+Shift+X"
+      },
+      "description": "Toggle feature foo"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page" : "options.html",
+  "manifest_version": 2
+}

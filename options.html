@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS X-ray Options</title>
+  </head>
+  <body>
+    <div class="settings-container">
+      <div class="field">
+        <label for="background_color">Background Color:</label>
+        <input type="color" id="background_color" name="background_color" value="#ffffff">
+      </div>
+      <div class="field">
+        <label for="text_color">Text Color:</label>
+        <input type="color" id="text_color" name="text_color" value="#ffffff">
+      </div>
+      <div class="field">
+        <label for="outline_color">Outline Color:</label>
+        <input type="color" id="outline_color" name="outline_color" value="#ffffff">
+      </div>
+      <div class="field">
+        <label for="outline_style">Outline Stlye:</label>
+        <select name="outline_style" id="outline_style">
+          <option value="solid">Solid</option>
+          <option value="dashed">Dashed</option>
+          <option value="dotted">Dotted</option>
+          <option value="double">Double</option>
+          <option value="groove">Groove</option>
+          <option value="ridge">Ridge</option>
+        </select>
+      </div>
+      <div class="field">
+        <button id="saveButton">Save</button>
+      </div>
+      <div class="field">
+        <button id="resetButton">Revert to Default Settings</button>
+      </div>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>
